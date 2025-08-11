@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Bitcount", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+ 
+
+#base{ 
+    background-color: rgb(57, 39, 65);
+    background-image: url(img/5441113.jpg);
+    background-size: cover; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column; 
+}
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para cubrir toda la pantalla */
+    z-index: 0; /* Envía el video al fondo */
+}
+.quitar{
+    display: none; 
+}
+
+
+#cuenta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #9616ffc9;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    height: 100%;
+}
+
+#Bloque-1{
+    background-color: #9616ffc9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #e311ffb2;
+    box-shadow: 2px 2px 10px black;
+    margin-bottom: 20px;
+    height: 50%;
+    width: 30%;
+   
+}
+h1{
+    font-size: 30px;;
+    background-color: #660dafd7;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e311ffb2;
+}
+#inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+}
+
+#inputTiempo{
+    width: 100%;
+    background-color: #660dafd7;
+    color: white;
+    border-radius: 10px;
+    border-color: #e311ffb2;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+#inputTiempo::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+.correcta{
+    outline: 2px solid #00ff0d;
+}
+.incorrecta{
+    outline: 2px solid #fd2828; 
+}
+
+.info {
+    display: none;
+}
+#tiempo{
+    font-size: 30px;
+    background-color: #660dafd7;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #e311ffb2;
+}
+
+
+.showInfo {
+    display: block; 
+    color: #ff0000;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+#inputBtn{
+    width: 100%;
+    background-color: #9616ffc9;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #e311ffb2;
+    font-size: x-large;
+}
+
+#inputBtn:disabled{
+   background-color: #660dafd7;
+opacity: 1;
+cursor: not-allowed;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #660dafd7;
+    color: wheat;
+    padding: 5px;
+}
+
+
+@media(max-width: 768px){
+    #Bloque-1 {
+        width: 90%; /* Ajusta el ancho del bloque en pantallas pequeñas */
+        height: auto; /* Permite que el bloque ajuste su altura automáticamente */
+    }
+    #cuenta {
+        width: 90%; /* Ajusta el ancho del bloque de cuenta en pantallas pequeñas */
+    }
+    h1 {
+        font-size: 24px; /* Reduce el tamaño de fuente del título en pantallas pequeñas */
+    }
+    
+}
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+    #Bloque-1 {
+        width: 70%; /* Ajusta el ancho del bloque en pantallas medianas */
+        height: auto; /* Permite que el bloque ajuste su altura automáticamente */
+    }
+    #cuenta {
+        width: 70%; /* Ajusta el ancho del bloque de cuenta en pantallas medianas */
+    }
+    h1 {
+        font-size: 28px; /* Reduce el tamaño de fuente del título en pantallas medianas */
+    }
+}

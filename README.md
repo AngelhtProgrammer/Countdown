@@ -4,12 +4,12 @@ Cuenta Abajo is a simple countdown timer web app. Enter a number of seconds (1â€
 
 ## Features
 
--Input validation (only numbers between 1 and 60 allowed)
--Responsive design for desktop and mobile
--Countdown display with styled feedback
--Rocket launch video plays when countdown finishes
--Custom Bitcount font and themed UI
--Social link to the author's GitHub
+- Input validation (only numbers between 1 and 60 allowed)
+- Responsive design for desktop and mobile
+- Countdown display with styled feedback
+- Rocket launch video plays when countdown finishes
+- Custom Bitcount font and themed UI
+- Social link to the author's GitHub
 
 ## Usage
 
@@ -21,13 +21,14 @@ Cuenta Abajo is a simple countdown timer web app. Enter a number of seconds (1â€
 ## Project Structure
 
 ***
-Conteo.js         # Countdown logic and validation
-index.css         # Styles and responsive design
-index.html        # Main HTML file
-img/
-  5441113.jpg     # Background image
-  Despegue.mp4    # Rocket launch video
-  github.png      # GitHub logo for footer
+-  `index.html`:
+- `Conteo.js`         # Countdown logic and validation
+- `index.css`         # Styles and responsive design
+- `index.html`        # Main HTML file
+- `img/`
+  `5441113.jpg`     # Background image
+  `Despegue.mp4`    # Rocket launch video
+  `github.png`      # GitHub logo for footer
 ***
 
 
