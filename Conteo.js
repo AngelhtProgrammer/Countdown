@@ -52,13 +52,19 @@ const temporizador = () => {
             tiempo.classList.add("quitar");
             inputTiempo.disabled = false;
             inputBtn.disabled = false;
-            
+           
           }  else if (tiempoRestante > 60){
             alert(`El tiempo limite es de 60s Convirtiendo... `)
             tiempoRestante = 60;
           }
        
 };
+
+video.addEventListener("ended", (event) => {
+  alert("El video ha terminado. Puedes ingresar un nuevo tiempo.");
+  video.classList.add("quitar");
+  return location.reload();
+});
 
 inputBtn.addEventListener('click', e => {
     e.preventDefault();
